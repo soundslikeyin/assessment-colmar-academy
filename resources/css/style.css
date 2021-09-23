@@ -1,1 +1,25 @@
 /* this is the main style sheet for Colmar Academy site*/
+header {
+    background-color: white;
+}
+
+.main-menu ul {
+    list-style: none;
+}
+
+.mobile-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
