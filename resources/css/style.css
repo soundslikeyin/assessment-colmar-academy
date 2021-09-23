@@ -111,3 +111,28 @@ header {
     padding-top: 16px;
     padding-bottom: 32px;
 }
+
+.courses-container {
+    outline: solid 1px #f3f4f4;
+    display: grid;
+    padding: 32px 16px 32px 16px;
+}
+
+.courses-container h2 {
+    height: fit-content;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.courses-inner-container {
+    display: grid;
+    row-gap: 8px;
+    margin-top: 16px;
+}
+
+.course-card {
+    background-color: #dbdbdb;
+    padding: 16px 16px 24px 16px;
+}
+
