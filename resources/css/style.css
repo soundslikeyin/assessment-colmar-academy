@@ -27,6 +27,10 @@ a {
     color: #5f9de5;
 }
 
+footer {
+    font-size: 12px;
+}
+
 .banner-content p {
     font-size: 22px;
     font-weight:500;
@@ -68,33 +72,28 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding: 32px 16px 32px 16px;
 }
 
 .banner-content h1 {
     text-align: left;
-    /* line-height:normal; */
     width: 100%;
+
 }
 
 .banner-content p {
     text-align: left;
     margin-top: 32px;
-    /* line-height:normal; */
     width: 100%;
 }
 
-.banner-content button {
+.banner-button {
     text-align: center;
     width: 100%;
     background-color: #9b9b9b;
     margin-top: 24px;
-    height: 55px;
     border: 0;
-    padding: 0;
+    padding: 8px 0 8px 0;
     color: white;
     font-size: 22px;
     font-weight:500;
@@ -103,7 +102,7 @@ header {
 .side-information {
     background-color: white;
     display: grid;
-    margin: 16px 16px 32px 16px;
+    padding: 16px 16px 32px 16px;
     row-gap: 64px;
 }
 
@@ -121,7 +120,6 @@ header {
     height: fit-content;
     line-height: normal;
     text-align: center;
-
 }
 
 .courses-inner-container {
@@ -136,7 +134,7 @@ header {
 }
 
 .exhibit-container {
-    margin: 32px 0px 24px 0px;
+    padding: 32px 0px 24px 0px;
 }
 
 .exhibit-container h2 {
@@ -152,4 +150,10 @@ header {
 .exhibit-video-mobile {
     width: 100vw;
 }
+
+.copyright {
+    padding: 16px 16px 16px 16px;
+    width: 100%;
+}
+
 
