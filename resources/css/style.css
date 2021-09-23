@@ -10,7 +10,24 @@ h1 {
     font-weight: bold;
 }
 
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
 p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+a {
+    font-size: 14px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #5f9de5;
+}
+
+.banner-content p {
     font-size: 22px;
     font-weight:500;
 }
@@ -81,4 +98,16 @@ header {
     color: white;
     font-size: 22px;
     font-weight:500;
+}
+
+.side-information {
+    background-color: white;
+    display: grid;
+    margin: 16px 16px 32px 16px;
+}
+
+.side-text {
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 32px;
 }
