@@ -136,3 +136,21 @@ header {
     padding: 16px 16px 24px 16px;
 }
 
+.exhibit-container {
+    margin: 32px 0px 24px 0px;
+}
+
+.exhibit-container h2 {
+    height: fit-content;
+    line-height: normal;
+    text-align: center;
+}
+
+.main-exhibit-media {
+    margin: 16px 0 24px 0;
+}
+
+.exhibit-video-mobile {
+    width: 100vw;
+}
+
