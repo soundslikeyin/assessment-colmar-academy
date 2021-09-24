@@ -10,8 +10,6 @@
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
 
     <style>
-       
-
         .main-information {
             display: none;
             flex-direction: column;
@@ -50,9 +48,25 @@
         }
 
         .course-description-desktop {
-                display: none;
+            display: none;
         }
 
+        .exhibit-title-desktop {
+            display: none;
+        }
+
+        .main-exhibit {
+            display: flex;
+            flex-direction: column;
+            padding-left: 24px;
+            padding-right: 24px;
+            width: 60vw;
+        }
+
+        .side-exhibit {
+            display: none;
+            width: 40vw;
+        }
 
         @media (min-width: 1024px) {
             .menu-mobile {
@@ -67,7 +81,7 @@
                 display: flex;
             }
 
-            
+
             .banner-container {
                 display: flex;
                 flex-direction: row;
@@ -79,14 +93,14 @@
             }
 
             .banner-media {
-            display: flex;
-            flex-direction: column;
-            padding-left: 24px;
-            padding-right: 24px;
-            padding-top: 32px;
-            padding-bottom: 32px;
-            width: 60vw;
-        }
+                display: flex;
+                flex-direction: column;
+                padding-left: 24px;
+                padding-right: 24px;
+                padding-top: 32px;
+                padding-bottom: 32px;
+                width: 60vw;
+            }
 
             .banner-button {
                 width: 50%;
@@ -102,6 +116,7 @@
             .side-information {
                 width: 40vw;
                 padding-left: 16px;
+                row-gap: 16px;
             }
 
             .side-card {
@@ -170,6 +185,44 @@
 
             .course-title-desktop {
                 margin-bottom: 8px;
+            }
+
+            .exhibit-title-mobile {
+                display: none;
+            }
+
+            .exhibit-title-desktop {
+                display: block;
+            }
+
+            .exhibit-inner-container {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .exhibit-video-mobile {
+                width:100%;
+            }
+
+            .side-exhibit {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .side-exhibit-card {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .side-exhibit-card img {
+                width: 35%;
+                padding: 16px;
+            }
+
+            .side-exhibit-text {
+                width: 65%;
+                align-content: flex-start;
+                padding: 16px;
             }
 
         }
@@ -296,7 +349,7 @@
                     <div class="course-card">
                         <div class="course-image-desktop">
                             <img class="course-image" src="resources/images/course-software.jpg" />
-                            
+
                         </div>
                         <div class="course-text">
                             <h3>Software Engineering</h3>
@@ -375,15 +428,45 @@
         <!-- Exhibit -->
         <section class="exhibit">
             <div class="exhibit-container">
-                <h2>Thesis exhibits</h2>
-                <div class="main-exhibit">
-                    <div class="main-exhibit-media">
-                        <video class="exhibit-video-mobile">
-                            <source src="resources/videos/thesis.mp4" type="video/mp4">
-                            Sorry, your browser doesn't support embedded videos.
-                        </video>
+                <h2 class="exhibit-title-mobile">Thesis exhibits</h2>
+                <h2 class="exhibit-title-desktop">Thesis exhibit</h2>
+                <div class="exhibit-inner-container">
+                    <div class="main-exhibit">
+                        <div class="main-exhibit-media">
+                            <video class="exhibit-video-mobile">
+                                <source src="resources/videos/thesis.mp4" type="video/mp4">
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        </div>
+                        <div class="main-exhibit-text">
+                            <h3>Reimagine Urban</h3>
+                            <p>"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus, nec
+                                consequat
+                                neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet,
+                                effcitur
+                                dolor consequat, tristque ligula."
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="side-exhibit">
+                        <div class="side-exhibit-card">
+                            <img class="side-exhibit-image" src="resources/images/thesis-fisma.jpg" />
+                            <div class="side-exhibit-text">
+                                <h3>Fisma: Design and Prototype</h3>
+                                <p>Designer showcase of new prototype product</p>
+                            </div>
+                        </div>
+                        <div class="side-exhibit-card">
+                            <img class="side-exhibit-image" src="resources/images/thesis-now-and-then.jpg" />
+                            <div class="side-exhibit-text">
+                                <h3>Now and then</h3>
+                                <p>Research study about New York</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
     </main>

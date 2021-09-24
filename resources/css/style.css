@@ -198,6 +198,10 @@ header {
     width: 100vw;
 }
 
+.exhibit-title-mobile {
+    display: block;
+}
+
 /* copyright */
 .copyright {
     padding: 16px 16px 16px 16px;
