@@ -6,7 +6,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Colmar Academy</title>
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="https://content.codecademy.com/courses/freelance-1/capstone-2/resources/css/reset.css"> -->
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+
+    <style>
+       
+
+        .main-information {
+            display: none;
+            flex-direction: column;
+            padding-left: 24px;
+            padding-right: 24px;
+            width: 60vw;
+        }
+
+        .main-information-text h1 {
+            margin-bottom: 24px;
+
+        }
+
+        .main-quote {
+            margin-bottom: 32px;
+
+        }
+
+        .image-information-main {
+            margin-bottom: 32px;
+        }
+
+        .image-information-desktop {
+            display: none;
+            margin-top: 16px;
+            margin-left: 16px;
+
+        }
+
+        .course-image-desktop {
+            display: none;
+        }
+
+        .course-title-desktop {
+            display: none;
+        }
+
+        .course-description-desktop {
+                display: none;
+        }
+
+
+        @media (min-width: 1024px) {
+            .menu-mobile {
+                display: none;
+            }
+
+            .menu-desktop {
+                display: flex;
+            }
+
+            .main-information {
+                display: flex;
+            }
+
+            
+            .banner-container {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .banner-content {
+                width: 40vw;
+
+            }
+
+            .banner-media {
+            display: flex;
+            flex-direction: column;
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            width: 60vw;
+        }
+
+            .banner-button {
+                width: 50%;
+                background-color: #4d4e4e;
+            }
+
+            .information-container {
+                display: flex;
+                flex-direction: row;
+                padding: 32px 0px 32px 0px;
+            }
+
+            .side-information {
+                width: 40vw;
+                padding-left: 16px;
+            }
+
+            .side-card {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .side-media {
+                width: 35%;
+                height: auto;
+            }
+
+            .side-text {
+                width: 65%;
+                margin: 0 0.75rem 0 1rem;
+            }
+
+            .image-information-mobile {
+                display: none;
+            }
+
+            .image-information-desktop {
+                display: block;
+            }
+
+            .courses-container {
+                background-color: #dbdbdb;
+                padding-left: 72px;
+                padding-right: 72px;
+            }
+
+            .course-image-desktop {
+                display: block;
+
+            }
+
+            .course-title-desktop {
+                display: block;
+            }
+
+            .course-description-desktop {
+                display: block;
+            }
+
+            .courses-inner-container {
+                grid-template-columns: repeat(3, 2fr);
+                row-gap: 32px;
+                column-gap: 32px;
+                background-color: #dbdbdb;
+
+            }
+
+            .course-card {
+                padding: 0;
+                background-color: white;
+            }
+
+            .course-text {
+                padding: 16px 0 24px 16px;
+
+            }
+
+            .course-text h3 {
+                margin-bottom: 8px;
+            }
+
+            .course-title-desktop {
+                margin-bottom: 8px;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
@@ -60,46 +227,65 @@
                 </div>
                 <div class="banner-content">
                     <h1>Learn something <br />new everyday</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit.</p>
                     <a href="#" class="banner-button">Start here</a>
                 </div>
             </div>
         </section>
         <!-- Information -->
         <section class="information">
-            <div class="side-information">
-                <div class="side-card">
-                    <div class="side-media">
-                        <img class="image-information-mobile"
-                            src="resources/images/information-orientation-mobile.jpg" />
-                    </div>
-                    <div class="side-text">
-                        <h3>Orientation date</h3>
-                        <p>Tue 10/11 & Wed 10/12: 8am - 3pm</p>
-                        <a href="#">Read more</a>
-                    </div>
-                </div>
-                <div class="side-card">
-                    <div class="side-media">
-                        <img class="image-information-mobile" src="resources/images/information-campus-mobile.jpg" />
-                    </div>
-                    <div class="side-text">
-                        <h3>Our campus</h3>
-                        <p>Find which campus is close by you</p>
-                        <a href="#">Read more</a>
+            <div class="information-container">
+                <div class="main-information">
+                    <img class="image-information-main" src="resources/images/information-main.jpg" />
+                    <div class="main-information-text">
+                        <h1>It doesn't hurt to keep practicing</h1>
+                        <p class="main-quote">"I told my manager I wanted to learn design and shared ways it could be
+                            helpful in my current role.
+                            He responded right away, said, 'This is awesome,' and my company paid for the course."
+                        </p>
+                        <p class="quote-person">Emanuel, Sr Strategist at Hiring.com</p>
                     </div>
                 </div>
-                <div class="side-card">
-                    <div class="side-media">
-                        <img class="image-information-mobile"
-                            src="resources/images/information-guest-lecture-mobile.jpg" />
+                <div class="side-information">
+                    <div class="side-card">
+                        <div class="side-media">
+                            <img class="image-information-mobile"
+                                src="resources/images/information-orientation-mobile.jpg" />
+                            <img class="image-information-desktop" src="resources/images/information-orientation.jpg" />
+                        </div>
+                        <div class="side-text">
+                            <h3>Orientation date</h3>
+                            <p>Tue 10/11 & Wed 10/12: 8am - 3pm</p>
+                            <a href="#">Read more</a>
+                        </div>
                     </div>
-                    <div class="side-text">
-                        <h3>Our guest lecture</h3>
-                        <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-                        <a href="#">Read more</a>
+                    <div class="side-card">
+                        <div class="side-media">
+                            <img class="image-information-mobile"
+                                src="resources/images/information-campus-mobile.jpg" />
+                            <img class="image-information-desktop" src="resources/images/information-campus.jpg" />
+                        </div>
+                        <div class="side-text">
+                            <h3>Our campus</h3>
+                            <p>Find which campus is close by you</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                    <div class="side-card">
+                        <div class="side-media">
+                            <img class="image-information-mobile"
+                                src="resources/images/information-guest-lecture-mobile.jpg" />
+                            <img class="image-information-desktop"
+                                src="resources/images/information-guest-lecture.jpg" />
+                        </div>
+                        <div class="side-text">
+                            <h3>Our guest lecture</h3>
+                            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                            <a href="#">Read more</a>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
         <!-- Courses -->
@@ -108,33 +294,79 @@
                 <h2>Start Learning</h2>
                 <div class="courses-inner-container">
                     <div class="course-card">
+                        <div class="course-image-desktop">
+                            <img class="course-image" src="resources/images/course-software.jpg" />
+                            
+                        </div>
                         <div class="course-text">
                             <h3>Software Engineering</h3>
+                            <h4 class="course-title-desktop">COURSES</h4>
+                            <p class="course-description-desktop">Web Development, Mobile Development, iOT, APIs</p>
                         </div>
                     </div>
                     <div class="course-card">
+                        <div class="course-image-desktop">
+                            <img class="course-image" src="resources/images/course-computer-art.jpg" />
+
+                        </div>
                         <div class="course-text">
                             <h3>Computer art</h3>
+                            <h4 class="course-title-desktop">COURSES</h4>
+                            <p class="course-description-desktop">Imaging & Design, Web Design, Motion Graphics & Visual
+                                Effects, Computer Animation</p>
+
                         </div>
                     </div>
                     <div class="course-card">
+                        <div class="course-image-desktop">
+                            <img class="course-image" src="resources/images/course-design.jpg" />
+
+                        </div>
                         <div class="course-text">
                             <h3>Design</h3>
+                            <h4 class="course-title-desktop">COURSES</h4>
+                            <p class="course-description-desktop">User Experience Design, User Research, Visual Design
+                            </p>
+
                         </div>
                     </div>
                     <div class="course-card">
+                        <div class="course-image-desktop">
+                            <img class="course-image" src="resources/images/course-data.jpg" />
+
+                        </div>
+
                         <div class="course-text">
                             <h3>Data</h3>
+                            <h4 class="course-title-desktop">COURSES</h4>
+                            <p class="course-description-desktop">Data Science, Big Data, SQL, Data Visualization</p>
+
                         </div>
                     </div>
                     <div class="course-card">
+                        <div class="course-image-desktop">
+                            <img class="course-image" src="resources/images/course-business.jpg" />
+
+                        </div>
+
                         <div class="course-text">
                             <h3>Business</h3>
+                            <h4 class="course-title-desktop">COURSES</h4>
+                            <p class="course-description-desktop">Product Development, Business Development, Startup</p>
+
                         </div>
                     </div>
                     <div class="course-card">
+                        <div class="course-image-desktop">
+                            <img class="course-image" src="resources/images/course-marketing.jpg" />
+
+                        </div>
+
                         <div class="course-text">
                             <h3>Marketing</h3>
+                            <h4 class="course-title-desktop">COURSES</h4>
+                            <p class="course-description-desktop">Analytics, Content Marketing, Mobile Marketing</p>
+
                         </div>
                     </div>
                 </div>
