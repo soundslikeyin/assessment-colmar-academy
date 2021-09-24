@@ -225,6 +225,28 @@
                 padding: 16px;
             }
 
+            footer {
+                display: flex;
+                flex-direction: row;
+                width: 100vw;
+                padding: 0px 24px 16px 24px;
+                justify-content: space-between;
+            }
+
+            .copyright {
+                padding: 0;
+            }
+
+            .terms-privacy {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 12px;
+                column-gap: 16px;
+                padding: 0;
+            }
+
         }
     </style>
 </head>
@@ -475,6 +497,11 @@
         <span class="copyright">
             © 2016 Colmar Academy. All rights reserved
         </span>
+
+        <div class="terms-privacy">
+            <div>Terms</div>
+            <div>Privacy</div>
+        </div>
     </footer>
 </body>
 
